@@ -23,12 +23,12 @@ log "Backing up current deployment"
 mkdir -p $BACKUP_DIR
 cp -r $DEPLOY_DIR $BACKUP_DIR/app_$TIMESTAMP
 
-#Fetch the latest code
+
 log "Fetching the latest code"
 cd $DEPLOY_DIR
 git pull $REPO_URL
 
-#Install dependencies
+#Install depenn 
 log "Installing dependencies"
 npm install
 
@@ -38,3 +38,4 @@ systemctl restart app
 
 log "Deployment finished successfully"
 
+i
