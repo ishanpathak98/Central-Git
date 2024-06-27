@@ -15,7 +15,7 @@ log() {
   echo "$TIMESTAMP - $1" >> $LOG_FILE
 }
 
-# Steps
+
 log "Starting deployment"
 
 # Backup current deployment
@@ -32,10 +32,11 @@ git pull $REPO_URL
 log "Installing dependencies"
 npm install
 
-#Restart application
+
 log "Restarting application"
 systemctl restart app
 
 log "Deployment finished successfully"
+echo "Thank You"
 
 i
