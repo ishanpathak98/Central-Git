@@ -39,4 +39,3 @@ systemctl restart app
 log "Deployment finished successfully"
 echo "Thank You"
 
-i
