@@ -28,7 +28,7 @@ log "Fetching the latest code"
 cd $DEPLOY_DIR
 git pull $REPO_URL
 
-#Install depenn 
+#Install dependencies 
 log "Installing dependencies"
 npm install
 
